@@ -1,4 +1,5 @@
 from lib.finder.shell.shell import *
+from lib.finder.wpshell.wpshell import *
 import os
 import platform
 from colorama import Fore, Style, init
@@ -32,8 +33,7 @@ def banner():
 {space}{space}{space}{lightY}║  ║  ╠═╣╚╦╝  ╠╩╗║ ║ ║ 
 {space}{space}{space}{lightY}╚═╝╩═╝╩ ╩ ╩   ╚═╝╚═╝ ╩ \n {reset}
 {space}[{green}01{reset}] Shell Finder ({red} 1k+ list name shells {reset})
-{space}[{green}02{reset}] Header information security
-{space}[{green}03{reset}] Web Application Vulnerability Scanner
+{space}[{green}02{reset}] Shell Finder CMS Wordpress ({red} All Dir wp {reset})
 
 """
     print(banner)
@@ -43,6 +43,8 @@ def main():
         cmd = input(f"{cyan}Input Your Options =>{reset} ")
         if cmd == "01":
             shell()
+        if cmd == "02":
+            wpshell()
         elif cmd == "exit":
             print("Exiting program")
             break
