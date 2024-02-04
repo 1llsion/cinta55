@@ -1,6 +1,4 @@
 from lib.finder.shell.shell import *
-from lib.exploit.hdinfo.hdinfo import *
-from lib.exploit.wascan.wascan import *
 import os
 import platform
 from colorama import Fore, Style, init
@@ -45,10 +43,6 @@ def main():
         cmd = input(f"{cyan}Input Your Options =>{reset} ")
         if cmd == "01":
             shell()
-        elif cmd == "02":
-            hdinfo()
-        elif cmd == "03":
-            wascan()
         elif cmd == "exit":
             print("Exiting program")
             break
